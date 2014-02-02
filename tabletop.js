@@ -109,7 +109,7 @@
       };
       url = url + "&callback=" + 'Tabletop.callbacks.' + callbackName;
       script.src = url;
-      document.getElementByTagName('head')[0].appendChild(script);
+      document.getElementByTagName('script')[0].parentNode.appendChild(script);
     },
 
     /* 
