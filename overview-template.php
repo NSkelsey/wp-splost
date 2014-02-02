@@ -121,13 +121,6 @@ Template Name: Category Overview Template
       var pageName = "<?php the_title(); ?>"
       var thePageParent = getType(data, pageParent)
       var thePageName  = getProject(data, pageName)
-      
-      // make map
-
-      var map = loadMap()
-        thePageParent.forEach(function (thePageParent){
-          displayAddress(map, thePageParent)
-      })
 
       console.log(data);
       global_data = data;
