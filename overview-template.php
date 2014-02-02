@@ -9,7 +9,7 @@ Template Name: Category Overview Template
 <?php get_header(); ?>
  <div id="maincontainer" class="overview" >
     <div class="articleHolder">  
-    <h3>Overview Description</h3>
+    <h3>Overview Description + Extra thoughts</h3>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
      					<?php if ( is_front_page() ) { ?>
@@ -128,6 +128,9 @@ Template Name: Category Overview Template
         thePageParent.forEach(function (thePageParent){
           displayAddress(map, thePageParent)
       })
+
+      console.log(data);
+      global_d = data;
 
 var noProjsInCat = thePageParent.length 
 

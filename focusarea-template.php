@@ -189,13 +189,6 @@ Template Name: Focus Area Template
      var thePageParent = getType(data, pageParent) // Filter to array of Category
      var thePageName  = getProject(data, pageName) // Filte to object of Focus Area
 
-     // make map 
-
-     var map = loadMap()
-     thePageName.forEach(function (thePageName){
-       displayAddress(map, thePageName)
-     })
-
 var noProjsInCat = thePageParent.length 
 // if user's browswer doesn't support SVG, tell them
 if (Modernizr.svg) renderGraph(thePageParent, noProjsInCat, "#holder") 
