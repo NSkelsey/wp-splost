@@ -130,7 +130,7 @@ Template Name: Category Overview Template
       })
 
       console.log(data);
-      global_d = data;
+      global_data = data;
 
 var noProjsInCat = thePageParent.length 
 
