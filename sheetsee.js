@@ -259,32 +259,6 @@ function inProgressSpent (projects) {
 //   return spent
 // } 
 
-// Mappin' with Leaflet.js
-
-function displayAddress(map, project) {
-  var markerLocation = new L.LatLng(project.lat, project.long);
-  setCenter(map, markerLocation)
-  var marker = new L.Marker(markerLocation);
-  map.addLayer(marker);
-  marker.bindPopup(project[focusAreaColumn]).openPopup();
-}
-
-function loadMap() {
-  var	map = new L.Map('map', {
-    touchZoom: true,
-    scrollWheelZoom: false,
-    dragging: true});
-	var cloudmade = new L.TileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
-	    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Tiles from <a href="http://tiles.stamen.com" target="_blank">Stamen</a>',
-	    maxZoom: 18
-	});
- map.addLayer(cloudmade);
- return map
-}
-
-function setCenter(map, markerLocation) {
-	map.setView(markerLocation, 13)
-}	
 
 // d3 chartyness
 

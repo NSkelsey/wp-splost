@@ -27,21 +27,11 @@ Template Name: Category Overview Template
   </div><!-- end holder -->
 
   <div class="articleHolder"> 
-    <h3>Project Locations</h3>
-      <div id="map" class="fullmap"><img class="spinner" src="/wp-content/themes/wp-splost/fbi_spinner.gif"></div>  
-  </div><!-- end holder -->
-
-  <div class="articleHolder"> 
     <h3>Category Funding Comparison</h3>
       <p>Below, a funds comparison between this category's Focus Areas.</p>
   	  <div id="holder"></div>
   </div><!-- end holder -->
 
-  <div class="articleHolder">
-    <h3>Project Funding Schedule</h3>
-      <p>This is the funding schedule budget as proposed by the SPLOST bill.<p>
-      <div id="table"></div>
-  </div><!-- end holder -->
 
   <div id="sharing">
     <p>Share this page: </p>
